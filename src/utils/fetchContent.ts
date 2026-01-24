@@ -28,11 +28,37 @@
 //   }
 // }
 // src/utils/fetchContent.js
+// export async function fetchContent(section: string): Promise<any[]> {
+//   try {
+//     const res = await fetch(`${import.meta.env.BASE_URL}db.json`);
+//     if (!res.ok) throw new Error("Network response was not ok");
+//     const data = await res.json();
+//     return data[section] || [];
+//   } catch (err) {
+//     console.error("Failed to fetch content:", err);
+//     return [];
+//   }
+// }
 export async function fetchContent(section: string): Promise<any[]> {
   try {
-    const res = await fetch(`${import.meta.env.BASE_URL}db.json`);
-    if (!res.ok) throw new Error("Network response was not ok");
+    // This ensures we always have a clean path like "/content-portal/db.json"
+    const baseUrl = import.meta.env.BASE_URL.endsWith('/') 
+      ? import.meta.env.BASE_URL 
+      : `${import.meta.env.BASE_URL}/`;
+      
+    const url = `${baseUrl}db.json`;
+    
+    console.log("Fetching from:", url); // Check this in the browser console!
+
+    const res = await fetch(url);
+    
+    if (!res.ok) {
+      throw new Error(`HTTP error! status: ${res.status}`);
+    }
+    
     const data = await res.json();
+    
+    // Return the specific array from the JSON object
     return data[section] || [];
   } catch (err) {
     console.error("Failed to fetch content:", err);
