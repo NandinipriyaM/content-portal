@@ -1,25 +1,3 @@
-// import { Routes, Route } from 'react-router-dom'
-// import Navbar from './components/Navbar'
-// import HomePage from './pages/HomePage'
-// import ArticlesPage from './pages/ArticlesPage'
-// import VideosPage from './pages/VideosPage'
-// import PodcastsPage from './pages/PodcastsPage'
-
-// function App() {
-//   return (
-//     <>
-//       <Navbar />
-//       <Routes>
-//         <Route path="/" element={<HomePage />} />
-//         <Route path="/articles" element={<ArticlesPage />} />
-//         <Route path="/videos" element={<VideosPage />} />
-//         <Route path="/podcasts" element={<PodcastsPage />} />
-//       </Routes>
-//     </>
-//   )
-// }
-
-// export default App
 import { Routes, Route } from 'react-router-dom'
 import { lazy, Suspense } from 'react'
 import Navbar from './components/Navbar'

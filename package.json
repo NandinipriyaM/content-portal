@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "preview:spa": "node preview-server.js",
     "lint": "eslint .",
-    "preview": "vite preview",
+    "preview": "vite preview --port 4173",
+      "lhci": "lhci autorun",
     "mock:server": "json-server --watch db.json --port 3001",
     "preview:all": "concurrently \"npm run mock:server\" \"npm run preview\"",
     "deploy": "gh-pages -d dist",
@@ -15,6 +17,7 @@
   },
   "dependencies": {
     "@tanstack/react-query": "^5.90.19",
+    "express": "^5.2.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.12.0"
