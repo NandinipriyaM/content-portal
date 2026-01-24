@@ -1,8 +1,3 @@
-// const PodcastsPage = () => {
-//   return <h1>Podcasts Page</h1>
-// }
-
-// export default PodcastsPage
 import { usePodcasts } from '../hooks/usePodcasts'
 import OptimizedImage from '../components/OptimizedImage'
 

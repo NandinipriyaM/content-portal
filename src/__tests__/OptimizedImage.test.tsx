@@ -1,6 +1,3 @@
-// test('renders without crashing', () => {
-//   expect(true).toBe(true)
-// })
 import { render, screen } from '@testing-library/react'
 import OptimizedImage from '../components/OptimizedImage'
 

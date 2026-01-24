@@ -12,7 +12,6 @@ export const useArticles = () => {
 
   return {
     ...query,
-    // Add this line: it ensures 'data' is always an array, never undefined
     data: query.data ?? [], 
   };
 }

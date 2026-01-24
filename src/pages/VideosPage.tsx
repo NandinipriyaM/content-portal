@@ -1,8 +1,3 @@
-// const VideosPage = () => {
-//   return <h1>Videos Page</h1>
-// }
-
-// export default VideosPage
 import { useVideos } from '../hooks/useVideos'
 import OptimizedImage from '../components/OptimizedImage'
 

@@ -1,5 +1,3 @@
-// import { useQuery } from '@tanstack/react-query'
-// Change: Import fetchContent instead of fetchVideos
 import { useQuery } from '@tanstack/react-query';
 import { fetchContent } from '../utils/fetchContent';
 
