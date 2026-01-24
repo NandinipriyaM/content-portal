@@ -1,12 +1,18 @@
 import { useQuery } from '@tanstack/react-query'
-import { fetchArticles } from '../services/api'
+import { fetchContent } from '../utils/fetchContent';
 
 export const useArticles = () => {
-  return useQuery({
+  const query = useQuery({
     queryKey: ['articles'],
-    queryFn: fetchArticles,
+    queryFn: () => fetchContent('articles'),
     staleTime: 5 * 60 * 1000, 
     gcTime: 10 * 60 * 1000,  
     refetchOnWindowFocus: true,
-  })
+  });
+
+  return {
+    ...query,
+    // Add this line: it ensures 'data' is always an array, never undefined
+    data: query.data ?? [], 
+  };
 }
