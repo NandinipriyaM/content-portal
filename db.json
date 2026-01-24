@@ -1,0 +1,86 @@
+{
+  "articles": [
+    {
+      "id": "1",
+      "title": "The Future of Web Development",
+      "description": "Exploring the shift towards server-side rendering and edge computing in 2026.",
+      "imageUrl": "https://picsum.photos/seed/art1/600/400",
+      "content": "Full content for the future of web development..."
+    },
+    {
+      "id": "2",
+      "title": "Mastering TypeScript Design Patterns",
+      "description": "How to write cleaner, more maintainable code using advanced TS features.",
+      "imageUrl": "https://picsum.photos/seed/art2/600/400",
+      "content": "Deep dive into Singleton, Factory, and Observer patterns..."
+    },
+    {
+      "id": "3",
+      "title": "Optimizing React Performance",
+      "description": "Avoid common pitfalls and unnecessary re-renders in large scale applications.",
+      "imageUrl": "https://picsum.photos/seed/art3/600/400",
+      "content": "Using useMemo, useCallback, and React.memo effectively..."
+    },
+    {
+      "id": "4",
+      "title": "The Rise of AI in UI Design",
+      "description": "How generative tools are changing the way we think about user interfaces.",
+      "imageUrl": "https://picsum.photos/seed/art4/600/400",
+      "content": "AI is no longer just a buzzword in the design community..."
+    },
+    {
+      "id": "5",
+      "title": "Cybersecurity Essentials for 2026",
+      "description": "Protecting your frontend applications from emerging security threats.",
+      "imageUrl": "https://picsum.photos/seed/art5/600/400",
+      "content": "Top 10 security practices for modern web apps..."
+    },
+    {
+      "id": "6",
+      "title": "State Management: Redux vs Context",
+      "description": "A comprehensive comparison to help you choose the right tool for your project.",
+      "imageUrl": "https://picsum.photos/seed/art6/600/400",
+      "content": "When to scale up to Redux and when to stay with Context API..."
+    }
+  ],
+  "videos": [
+    {
+      "id": "1",
+      "title": "React Server Components Explained",
+      "thumbnailUrl": "https://picsum.photos/seed/vid1/600/400",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "id": "2",
+      "title": "Building a Portfolio with Next.js",
+      "thumbnailUrl": "https://picsum.photos/seed/vid2/600/400",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    },
+    {
+      "id": "3",
+      "title": "CSS Grid vs Flexbox Layouts",
+      "thumbnailUrl": "https://picsum.photos/seed/vid3/600/400",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }
+  ],
+  "podcasts": [
+    {
+      "id": "1",
+      "title": "The Tech Talk: Episode 45",
+      "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
+      "duration": "45:00"
+    },
+    {
+      "id": "2",
+      "title": "Developer Career Advice",
+      "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
+      "duration": "32:15"
+    },
+    {
+      "id": "3",
+      "title": "The JavaScript Revolution",
+      "audioUrl": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3",
+      "duration": "58:20"
+    }
+  ]
+}
