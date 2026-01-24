@@ -1,0 +1,33 @@
+/* index.css */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Remove the flexbox layout from body */
+body {
+  margin: 0;
+  display: block; /* Important: changes from 'flex' to 'block' */
+  width: 100%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+}
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #e5e7eb;
+  border-top-color: #6366f1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

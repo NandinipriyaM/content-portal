@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+@media (max-width: 600px) {
+  .page-container {
+    padding: 10px; /* Gives more room on tiny screens */
+  }
+  
+  .article-grid {
+    grid-template-columns: 1fr; /* Stacks cards in a single column */
+  }
+}/* 1. Base Container: Centers content but adds breathing room on sides */
+.page-container {
+  width: 90%;          /* Uses 90% of screen width on small devices */
+  max-width: 1000px;   /* Won't grow larger than 1000px on big screens */
+  margin: 0 auto;
+  padding: 20px 0;     /* Vertical padding only */
+}
+
+/* 2. Tablet View (Screens smaller than 768px) */
+@media (max-width: 768px) {
+  .article-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 3+ */
+    gap: 15px;
+  }
+  h1 { font-size: 2rem; } /* Shrink text slightly so it doesn't wrap weirdly */
+}
+
+/* 3. Mobile View (Screens smaller than 480px) */
+@media (max-width: 480px) {
+  .page-container {
+    width: 95%; /* Use almost the whole screen width */
+  }
+  .article-grid {
+    grid-template-columns: 1fr; /* 1 column: stack cards vertically */
+  }
+  nav {
+    flex-direction: column; /* Stack nav links if they are too cramped */
+    gap: 10px;
+  }
+}

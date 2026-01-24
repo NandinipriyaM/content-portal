@@ -1,0 +1,23 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://localhost:4173/articles",
+        "http://localhost:4173/videos",
+        "http://localhost:4173/podcasts"
+      ],
+      "numberOfRuns": 3,
+      "startServerCommand": "npm run preview:all",
+      "startServerReadyRegex": "Local:"
+    },
+    "assert": {
+      "assertions": {
+        "categories:performance": ["warn", { "minScore": 0.9 }],
+        "categories:accessibility": ["warn", { "minScore": 0.95 }]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
